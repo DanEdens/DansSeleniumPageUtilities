@@ -7,9 +7,11 @@ from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support import expected_conditions as expect
 from selenium.webdriver.support.wait import WebDriverWait
 
-import testKitUtils
 
-logging = testKitUtils.makeLogger(__name__)
+#import testKitUtils
+import logging as logger
+#logging = testKitUtils.makeLogger(__name__)
+logging = logger.getlogger(__name__)
 
 
 class PageUtilities:
