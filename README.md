@@ -4,14 +4,9 @@ The PageUtilities class is designed to provide various utility functions for web
 Getting Started
 To use the PageUtilities class, you need to have the Selenium library installed. You can install it using the following command:
 
-## bash
-
-::
-
   pip install selenium
 
-
-Make sure you have a compatible web driver for your browser installed as well. The class requires a web driver instance to operate.
+Make sure you have a compatible web driver for your browser installed as well. There is a script to check driver installs included.
 
 ### Usage
 You can use the PageUtilities class by creating an instance and passing the web driver instance to its constructor. Here's an example of how to use the class to interact with web elements:
