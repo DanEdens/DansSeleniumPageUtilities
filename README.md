@@ -6,8 +6,9 @@ To use the PageUtilities class, you need to have the Selenium library installed.
 
 ## bash
 
-pip install selenium
-Save to grepper
+::
+  pip install selenium
+
 Make sure you have a compatible web driver for your browser installed as well. The class requires a web driver instance to operate.
 
 ### Usage
