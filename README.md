@@ -7,7 +7,9 @@ To use the PageUtilities class, you need to have the Selenium library installed.
 ## bash
 
 ::
+
   pip install selenium
+
 
 Make sure you have a compatible web driver for your browser installed as well. The class requires a web driver instance to operate.
 
@@ -33,32 +35,29 @@ page_utils.click_element(element_to_click)
 input_element = driver.find_element_by_name("input_name")
 page_utils.set_attribute_value(input_element, "Hello, PageUtilities!")
 
-# Don't forget to close the web driver when done
-driver.quit()
-Save to grepper
-Features
-Clicking Elements
+# Features
+## Clicking Elements
 The click_element method allows you to click on a specified element. It supports both regular clicking and clicking based on element coordinates.
 
-Sending Keystrokes
+## Sending Keystrokes
 The send_keystrokes_to_element method enables you to send keystrokes to a specific element. This is useful for interacting with input fields or triggering certain actions on the page.
 
-Getting and Setting Attribute Values
+## Getting and Setting Attribute Values
 The get_attribute_value and set_attribute_value methods provide functionality to get and set attribute values of web elements.
 
-Checking Element Display
+## Checking Element Display
 The element_is_displayed method allows you to check if a specific element is displayed on the page within a specified timeout.
 
-Handling Alerts
+## Handling Alerts
 The handle_alert_window method can be used to switch to an alert window, retrieve its text, and accept the alert.
 
-Checking Current Page
+## Checking Current Page
 The check_home method helps you determine if the current page is the "home" page by examining the URL.
 
-Scrolling the Page
+## Scrolling the Page
 The scroll_page_bottom method lets you scroll the page to the bottom.
 
-Customization
+## Customization
 The PageUtilities class provides options for customization, such as enabling click based on element coordinates and taking screenshots before clicks. These settings can be configured using the provided properties.
 
 For more details on each method's parameters and usage, refer to the docstrings within the class implementation.
