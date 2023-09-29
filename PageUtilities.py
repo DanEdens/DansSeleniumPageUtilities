@@ -204,16 +204,24 @@ class PageUtilities:
         return result_text
 
     def check_home(self, browser) -> bool:
-        result = browser.driver.current_url.lower()
-        if "home" in result:
-            return True
-        else:
-            time.sleep(1)
+        """
+        Check if the current URL of the browser contains the word 'home'.
+        
+        Args:
+            self: The instance of the class containing this method.
+            browser: The browser object with a 'driver' attribute representing the browser.
+    
+        Returns:
+            bool: True if 'home' is found in the current URL after up to two attempts with a 1-second delay,
+                  False otherwise.
+        """
+        for _ in range(2):
             result = browser.driver.current_url.lower()
             if "home" in result:
                 return True
-            else:
-                return False
+            time.sleep(1)
+        
+        return False
 
     def scroll_page_bottom(self, browser):
         return browser.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
